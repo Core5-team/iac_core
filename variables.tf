@@ -1,7 +1,7 @@
 variable "region" {
   description = "AWS region"
   type        = string
-  default     = "eu-central-1"
+  default     = "us-east-1"
 }
 
 variable "vpc_id" {
@@ -27,7 +27,7 @@ variable "common_tags" {
     CreatedBy   = "Terraform"
     Project     = "Illuminati"
     Environment = "stage"
-    Repository  = "https://github.com/The-A-Team-organization/illuminati_iac"
+    Repository  = "https://github.com/Core5-team/illuminati_iac"
     Module      = "stage_setup"
   }
 }
