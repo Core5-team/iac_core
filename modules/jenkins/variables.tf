@@ -36,7 +36,7 @@ variable "common_tags" {
     "CreatedBy"   = "Terraform"
     "Project"     = "Illuminati"
     "Environment" = "stage"
-    "Repository"  = "https://github.com/The-A-Team-organization/iac_core"
+    "Repository"  = "https://github.com/Core5-team/iac_core/"
     "Module"      = "jenkins"
   }
 }
