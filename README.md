@@ -24,7 +24,6 @@ These modules are not meant to be applied directly via terraform apply. Instead,
 - main.tf – integrates individual modules into a complete stage stack definition
 
 - modules/ – reusable Terraform modules:
-
   - jenkins/
 
   - sonarqube/
