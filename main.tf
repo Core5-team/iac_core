@@ -6,7 +6,7 @@ module "jenkins" {
   igw_id            = var.igw_id
   availability_zone = var.availability_zone
   common_tags       = var.common_tags
-  env               = "stage"
+  env               = "stage_01"
   ami               = var.jenkins.ami
   instance_type     = var.jenkins.instance_type
   subnet_cidr       = var.jenkins.subnet_cidr

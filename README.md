@@ -43,4 +43,4 @@ terraform init
 terraform plan
 ```
 
-However, in normal workflow, these modules are consumed by Terragrunt from a higher-level repository [iac_terragrunt](https://github.com/The-A-Team-organization/iac-terragrunt).
+However, in normal workflow, these modules are consumed by Terragrunt from a higher-level repository [iac_terragrunt](https://github.com/Core5-team/iac-terragrunt)
