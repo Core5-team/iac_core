@@ -54,3 +54,9 @@ variable "ecr_repositories" {
   default     = ["frontend", "backend", "mailer_service", "scheduler_service"]
 }
 
+variable "s3" {
+  type = object({
+    bucket_name = string
+    env         = string
+  })
+}
