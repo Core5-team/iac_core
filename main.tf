@@ -57,3 +57,13 @@ module "cross_account_prod" {
   role_name        = "ci-deploy-role"
   jenkins_role_arn = module.jenkins.jenkins_role_arn
 }
+
+module "s3" {
+  source = "./modules/s3"
+
+  bucket_name      = var.s3.bucket_name
+  env              = var.s3.env
+  prod_account_id  = var.s3.prod_account_id
+  dev_account_id   = var.s3.dev_account_id
+  stage_account_id = var.s3.stage_account_id
+}
