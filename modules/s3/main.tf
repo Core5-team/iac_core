@@ -18,8 +18,13 @@ data "aws_iam_policy_document" "lambda_cross_account_access" {
     effect = "Allow"
 
     principals {
-      type        = "AWS"
-      identifiers = ["lambda.amazonaws.com"]
+      type = "AWS"
+      identifiers = [
+        "arn:aws:iam::${var.prod_account_id}:root",
+        "arn:aws:iam::${var.dev_account_id}:root",
+        "arn:aws:iam::${var.stage_account_id}:root"
+      ]
+
     }
 
     actions = [

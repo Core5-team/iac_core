@@ -17,3 +17,18 @@ variable "env" {
   description = "Specifies the target environment (e.g., dev, stage, prod) for resource provisioning"
   type        = string
 }
+
+variable "prod_account_id" {
+  description = "AWS Account ID for the production environment"
+  type        = string
+}
+
+variable "dev_account_id" {
+  description = "AWS Account ID for the development environment"
+  type        = string
+}
+
+variable "stage_account_id" {
+  description = "AWS Account ID for the staging environment"
+  type        = string
+}

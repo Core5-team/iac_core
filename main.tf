@@ -61,6 +61,9 @@ module "cross_account_prod" {
 module "s3" {
   source = "./modules/s3"
 
-  bucket_name = var.s3.bucket_name
-  env         = var.s3.env
+  bucket_name      = var.s3.bucket_name
+  env              = var.s3.env
+  prod_account_id  = var.s3.prod_account_id
+  dev_account_id   = var.s3.dev_account_id
+  stage_account_id = var.s3.stage_account_id
 }

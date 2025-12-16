@@ -56,7 +56,11 @@ variable "ecr_repositories" {
 
 variable "s3" {
   type = object({
-    bucket_name = string
-    env         = string
+    bucket_name      = string
+    env              = string
+    stage_account_id = string
+    dev_account_id   = string
+    prod_account_id  = string
   })
 }
+
